@@ -1,0 +1,12 @@
+log/**/*
+log
+tmp/**/*
+tmp
+config/database.yml
+db/schema.rb
+.bundle
+*.log
+.sass-cache/*
+.rvmrc
+.idea/*
+.DS_Store

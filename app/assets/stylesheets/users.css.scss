@@ -1,0 +1,19 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.large-tfield {
+    font-size: 3em;
+    line-height: 15px;
+    font-family: verdana, sans-serif;
+    width: 99%
+}
+.large-label {
+    font-weight:bold;
+    margin-bottom: 2px;
+    font-size:1.2em;
+}
+.wrapper-center {
+    width:50%;
+    margin:90px auto;
+
+}

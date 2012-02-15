@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Identifier:</b>
+  <%= @user.identifier %>
+</p>
+
+<p>
+  <b>Provider name:</b>
+  <%= @user.provider_name %>
+</p>
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+<p>
+  <b>Full name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email%>
+</p>
+<p>
+  <b>Gender:</b>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%= @user.birthday %>
+</p>
+<p>
+  <b>Phone:</b>
+  <%= @user.phone %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= image_tag @user.photo %>
+</p>
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @user.language %>
+</p>
+<p>
+  <b>UID:</b>
+  <%= @user.uid %>
+</p>
+<p>
+  <b>Cookie:</b>
+  <%= @user.remember_token %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  identifier: MyString
+  provider_name: MyString
+
+two:
+  identifier: MyString
+  provider_name: MyString

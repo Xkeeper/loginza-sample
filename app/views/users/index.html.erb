@@ -1,0 +1,39 @@
+<div style='float:left; width: 50%'>
+    <h1>Listing users</h1>
+</div>
+<% if logged_in? %>
+<div style='float:right; width: 50%; text-align: right;'>
+    <h2>Welcome, <span style='color:red;'><%= current_user.username%></span>!</h2>
+    <%= link_to 'Change username', :controller => 'users', :action => 'change_username', :id => current_user.id %>
+</div>
+<% end %>
+<br />
+
+
+<div style='clear:both;'>
+<table>
+  <tr>
+    <th>Identifier</th>
+    <th>Provider name</th>
+    <th>Cookie</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.identifier %></td>
+    <td><%= user.provider_name %></td>
+    <td><%= user.remember_token  %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%#= link_to 'New User', new_user_path %>
+<%= loginza_button_tag("New User", "http://localhost:3000/users")  %>
+</div>
